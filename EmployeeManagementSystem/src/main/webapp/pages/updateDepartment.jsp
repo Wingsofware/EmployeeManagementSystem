@@ -45,21 +45,21 @@
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="x_panel">
 							<div class="x_title">
-								<h2>Add Company</h2>
+								<h2>Update Department</h2>
 								<div class="clearfix"></div>
 							</div>
 							<div class="x_content">
 								<br>
-								<form action="/ems/wow/updateCompany" method="post"
+								<form action="/ems/wow/updateDepartment" method="post"
 									class="form-horizontal form-label-left">
 
 									<div class="form-group">
 										<label class="control-label col-md-3 col-sm-3 col-xs-12"
-											for="first-name">Cid<span class="required">*</span>
+											for="first-name">Did<span class="required">*</span>
 										</label>
 										<div class="col-md-6 col-sm-6 col-xs-12">
-											<input type="text" name="cid" readonly="readonly"
-												value="${company.cid}" class="form-control col-md-7 col-xs-12">
+											<input type="text" name="did" readonly="readonly"
+												value="${department.did}" class="form-control col-md-7 col-xs-12">
 										</div>
 									</div>
 									<div class="form-group">
@@ -68,43 +68,10 @@
 										</label>
 										<div class="col-md-6 col-sm-6 col-xs-12">
 											<input type="text" name="name" required="required"
-												value="${company.name}" class="form-control col-md-7 col-xs-12">
+												value="${department.name}" class="form-control col-md-7 col-xs-12">
 										</div>
 									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3 col-sm-3 col-xs-12"
-											for="last-name">Address<span class="required">*</span>
-										</label>
-										<div class="col-md-6 col-sm-6 col-xs-12">
-											<input type="text" name="address" required="required"
-												value="${company.address}" class="form-control col-md-7 col-xs-12">
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="middle-name"
-											class="control-label col-md-3 col-sm-3 col-xs-12">Phone</label>
-										<div class="col-md-6 col-sm-6 col-xs-12">
-											<input id="phone"
-												class="form-control col-md-7 col-xs-12" type="text" value="${company.phone}"
-												required="required" name="phone">
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="middle-name"
-											class="control-label col-md-3 col-sm-3 col-xs-12">Email</label>
-										<div class="col-md-6 col-sm-6 col-xs-12">
-											<input type="text" id="email" name="email"
-												value="${company.email}" required="required" class="form-control col-md-7 col-xs-12">
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="middle-name"
-											class="control-label col-md-3 col-sm-3 col-xs-12">Website</label>
-										<div class="col-md-6 col-sm-6 col-xs-12">
-											<input name="website" class="form-control col-md-7 col-xs-12"
-												value="${company.website}" type="text">
-										</div>
-									</div>
+									
 										<div align="center" style="color: green"><strong>${success}</strong></div>
 										<div align="center" style="color: red"><strong>${error}</strong></div>
 									<div class="ln_solid"></div>
